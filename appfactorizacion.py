@@ -82,8 +82,8 @@ try:
     fact = ' * '.join([f"({key})^{value}" for key, value in mi_diccionario.items()])
     st.success(f"Factorización: {z} = {fact}")
 
-    comprobacion = math.prod(a**b for a, b in mi_diccionario.items())
-    st.write(f"Comprobación: {comprobacion}")
+    #comprobacion = math.prod(a**b for a, b in mi_diccionario.items())
+    #st.write(f"Comprobación: {comprobacion}")
 except ValueError as e:
     st.error(f"Error en la entrada: {e}")
 except Exception as e:
