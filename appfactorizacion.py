@@ -73,7 +73,7 @@ def teo_fermat_gauss(diccionario, z):
 # Interfaz de Streamlit
 st.title("Factorización de Enteros Gaussianos")
 
-z_input = st.text_input("Ingrese el entero gaussiano en la forma a+bj:", value="3+4j")
+z_input = st.text_input("Ingrese el entero gaussiano en la forma a+bj con a,b números enteros", value="3+4j")
 
 try:
     z = complex(z_input.replace(" ", "").replace("j", "j"))
