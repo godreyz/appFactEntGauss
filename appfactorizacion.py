@@ -85,6 +85,6 @@ try:
     #comprobacion = math.prod(a**b for a, b in mi_diccionario.items())
     #st.write(f"Comprobación: {comprobacion}")
 except ValueError as e:
-    st.error(f"Debe ser un entero gaussiano: {e}")
+    st.error(f"Debe ser un entero gaussiano de la forma a+bj con a,b números enteros")
 except Exception as e:
     st.error(f"Ocurrió un error: {e}")
